@@ -1,0 +1,250 @@
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maximilian Filling">
+    <meta name="description" content="Hotelzimmer">
+    <meta name="keywords" content="Hotel, Event, Hotelzimmer, Frankenthal, Pfalz, Deutschland">
+    <title>Hotel Filling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="navigationsleiste.css">
+
+
+    <script src="navigationsleiste.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Gesamtcontainer, hierin wird alles in einem Container untergebracht -->
+
+    <div id="gesamt">
+
+        <header>
+            <div id="hauptnavigation">
+                <div class="logobereich">
+                    <a href="index.html" class="nav-logo"></a>
+                </div>
+
+                <div class="navigationsbereich">
+                    <div class="nav-oben">
+                        <a href="mailto:post@hotelfilling.de" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            post@hotelfilling.de
+                        </a>
+                        <a href="tel:0623331660" class="nav-link">
+                            Tel: 06233-31660
+                        </a>
+                        <div class="btnlang">
+                            <a href="index.html">
+                                <img src="bilder/de_en.svg" alt="Wechseln in englische Sprache">
+                            </a>
+                        </div>
+
+                        <div class="nav-socials">
+                            <a href="https://instagram.com" class="nav-link"><i
+                                    class="fab fa-instagram nav-icon"></i></a>
+                            <a href="https://facebook.com" class="nav-link"><i class="fab fa-facebook nav-icon"></i></a>
+                            <a href="https://twitter.com" class="nav-link"><i
+                                    class="fab fa-twitter-square nav-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="nav-unten">
+                        <div class="navigationspunkte">
+                            <a href="#home" class="nav-punkt nav-link">Home</a>
+                            <a href="#about" class="nav-punkt nav-link">About</a>
+                            <a href="pictures" class="nav-punkt nav-link">Pictures</a>
+                            <a href="#price" class="nav-punkt nav-link aktiv">Price</a>
+                            <a href="#contact" class="nav-punkt nav-link">Contact</a>
+                        </div>
+                        <div class="nav-suchbereich">
+                            <i class="fas fa-search nav-icon"></i>
+                            <input type="text" class="nav-suchfeld">
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="hamburger-icon" onclick="navigationUmschalten()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="jumbo">
+                <h1>Hotel Filling <br /> Pure relaxation and recreation</h1>
+                <h3>Our family business welcomes you</h3>
+
+                <div class="jumbo-buttons">
+                    <a href="https://ibe.hotels-online-buchen.de/(S(kp1fkzztu5i3l0ee0chjpyec))/Home/Index/de-DE/fillingfrankenthal"
+                        target="_blank" class="btn-primary">Book now</a>
+                    <a href="#features" class="btn-secondary">Further information</a>
+                </div>
+
+        </header>
+
+        <div id="home">
+            <section id="features">
+                <div class="container">
+                    <div class="features-box">
+
+                        <div class="feature">
+                            <i class="fas fa-comments"></i>
+                            <h3>Free advice</h3>
+                            <p>We are always there for you and will be happy to advise you.</p>
+                            <a href="tel:0623331660" class="tele"> Tel: 06233-31660</a> <br>
+                            <a href="mailto:post@hotelfilling.de" class="email">E-Mail: post@hotelfilling.de </a> <br>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="destinations">
+                <h2>Hotel room</h2>
+                <p>Escape the hustle and bustle of everyday life at Hotel Filling and find peace and relaxation.
+                    In our comfortable rooms you have everything that makes a home away from home: e.g. B. TV.
+                    Our free WiFi is available throughout the hotel.
+                </p>
+                <div class="destinations-box">
+                    <div class="destination">
+                        <div class="card" id="hz1">
+                            <div class="hover-box">
+                                <h4>Main building</h4>
+                                <a href="https://ibe.hotels-online-buchen.de/(S(kp1fkzztu5i3l0ee0chjpyec))/Home/Index/de-DE/fillingfrankenthal"
+                                    target="_blank">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destinations-box">
+                    <div class="destination">
+                        <div class="card" id="hz2">
+                            <div class="hover-box">
+                                <h4>outbuilding</h4>
+                                <a href="https://ibe.hotels-online-buchen.de/(S(kp1fkzztu5i3l0ee0chjpyec))/Home/Index/de-DE/fillingfrankenthal"
+                                    target="_blank">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div />
+
+
+                <div class="price">
+                    <article>
+                        <h2>Hotelroomprice</h2>
+                        <!-- Hier kann innerhalb der <p>-Tags ein Text ausgegeben werden -->
+                        <p>
+                            Our hotel area has individually and comfortably furnished rooms.
+                        </p>
+                        <ul>
+                            <p><b>Rooms in the guest house</b> </p>
+                            <li>EZ | DU <br>49,00€</li>
+                            <li>EZ | DU | WC <br> 59,00€</li>
+                            <li>DZ | DU | WC <br>79,00€ </li>
+                            <p><b>Standard & Comfort rooms in the hotel</b></p>
+                            <li>EZ | DU | WC <i>Standard</i> <br>69,00€ </li>
+                            <li>DZ als EZ | DU | WC <i>Komfort</i> <br>79,00€</li>
+                            <li>DZ | DU | WC <i>Standard</i> <br>79,00€ </li>
+                            <li>DZ | DU | WC <i>Komfort</i> <br> 89,00€</li>
+                            <li><i>Triple room</i> <br> 104,00€ </li>
+                            <li><i>App.4.Person</i> <br> 124,00€ </li>
+                        </ul>
+
+                        <br>
+                        <p><b>All overnight stays including VAT and breakfast buffet</b></p>
+
+                        <br><br>
+
+                        <ul>
+                            <li>Breakfast <i>6.00€</i> per person</li>
+                            <li>External guests pay <i>€15.90</i> per person for the breakfast buffet</li>
+                            <li>Underground parking costs <i>€10.00</i> per day</li>
+                            <li>We charge <i>€5.00</i> for a cleaning fee for your dog</li>
+                        </ul>
+
+                        <!-- Das <q>-Tag steht für ein Zitat für den Gedanken-->
+
+                        <p>
+                            You can book hotel rooms on Tel: 06233-31660
+                            or by <br>e-mail at post@hotelfilling.de or via our own
+                            booking platform.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </div> <!-- wir schließen -->
+
+        <!--Über Uns-->
+        <section id="about">
+            <div class="container">
+                <h2>About us</h2>
+                <p> A very good address in the heart of the Palatinate!<br>
+                    The Hotel Filling in Frankenthal welcomes you.<br>
+                    Our family business is an excellent address for a stay in the Palatinate.
+                    Enjoy the Palatinate hospitality in a modern ambience.
+                    This is ensured by a well-rehearsed team that always has an open ear for your wishes.
+                    So that you feel completely comfortable with us.
+                    Parking spaces directly at the house, room service and free WiFi throughout the hotel.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <a id="email" href="mailto:post@hotelfilling.de">post@hotelfilling.de</a>
+            <a id="phone" href="teL:06233-31660">06233-31660</a>
+        </section>
+
+        <h2>Contact form</h2>
+        <form action="index.php" method="post">
+            <input type="text" name="firstname" placeholder="firstname" required><br>
+            <input type="text" name="secondname" placeholder="secondname" required><br>
+            <input type="text" name="adress" placeholder="street" required><br>
+            <input type="text" name="adress" placeholder="adress" required><br>
+            <input type="text" name="adress" placeholder="adress " required><br>
+            <input type="email" name="email" placeholder="E-Mail" required><br>
+            <input type="zahlen" name="telephonenumber" placeholder="telephonenumber" required><br>
+            <select name="priorität">
+                <option value="hoch">high</option>
+                <option value="mittel">medium</option>
+                <option value="gering">small amount</option>
+            </select><br>
+            <textarea name="message" rows="8" cols="80" required></textarea><br>
+            <button type="submit" name="submit">submit</button>
+        </form>
+
+
+        <!-- Fuss Bereich -->
+
+        <div id="fuss"></div>
+        <footer>
+
+            <h3>Hotel & Event Filling<br /></h3>
+            Nürnbergerstraße. 14 <br />
+            67227 Frankenthal <br />
+            <a href="tel:0623331660" class="teleende"> Tel: 06233-31660</a>
+            <a href="mailto:post@hotelfilling.de" class="emailende">E-Mail: post@hotelfilling.de </a>
+
+            <b>Legal Information</b>
+            <a href="impressum.html" class="ende">Imprint</a>
+            <a href="datenschutz.html" class="ende">Privacy Policy</a></span>
+            <span class="ende">&copy;Hotel & Event Filling by Maximilian Filling</span>
+
+        </footer>
+
+        <!-- Fuss schließen -->
+
+
+    </div> <!-- Rest schließen-->
+
+
+</body>
+
+</html>

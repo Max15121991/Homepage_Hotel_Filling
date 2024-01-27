@@ -1,0 +1,370 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+/* Schriften*/
+body {
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.9;
+}
+
+h1 {
+    margin-top: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 1%;
+    border-radius: 20px/50%;
+}
+
+h2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  padding: 1%;
+  border-radius: 20px/50%;
+  margin-bottom: 35px;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  border-radius: 20px/50%;
+  margin-bottom: 35px;
+}
+
+li {
+  margin-top: 15px;
+  padding: 2%;
+  font-size: medium;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    font-size: medium;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+/*Anpassung der Geräte Handy, iPad, Computer*/
+@media (min-width: 1100px) {
+    .tabellenbehaelter {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    table {
+        width: 45%;
+        margin: 0;
+    }
+
+    img {
+        float: right;
+        padding: 1%;
+    }
+  }
+
+@media (min-width: 1300px) {
+    .hauptbehaelter {
+        background: white;
+        width: 50%;
+        margin: 0px auto;
+        padding: 1.5% 1%;
+        box-shadow: 2px 2px 5px #666666;
+    }
+
+    body {
+        background: white fixed;
+        margin: 0px;
+    }
+
+    li {
+        background-size: 3%;
+        background-repeat: no-repeat;
+        background-position: 1.5% center;
+        padding-left: 2%;
+      }   
+}
+
+/* FEATURES*/
+.features-box {
+  display: center; /*Die Ausrichtung des Content(Mittig)*/
+  padding: 40px 20px 40px 40px; /*Ausrichtung des Tect bzw. Button oder Icon*/
+  text-align: center; /*Mittige Zentrierung des Texts*/
+  background-color: white;
+}
+.feature {
+  padding: 10px; /*Abstand direkt zum Content*/
+  box-sizing: border-box;
+  flex-basis: 25%; /*Wie Flexibel*/
+}
+.feature i {
+  font-size: 4em; /*Größe des Icon*/
+  color: rgb(124, 28, 28); /*Icon Farbe*/
+}
+.feature h3 {
+  font-size: 1.6em; /*Schrift Größe*/
+  color: #222; /*Schrift Farbe*/
+  margin: 15px 0 5px 0; /*Abstand nach außen*/
+  font-weight: 600; /*Schrift dicke*/
+}
+.feature p {
+  font-size: 1.4em; /*Schrift Größe*/
+  color: #666; /*Schrift Farbe*/
+}
+
+/*Verwendete Links*/
+.tele {
+ color: rgb(124, 28, 28);
+ font-size: 1.5em;
+ text-decoration: none;
+}
+/*Ditto*/
+.email {
+  color: rgb(124, 28, 28);
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+
+  /* DESTINATIONS*/
+#destinations {
+  background-color: rgb(); /*Background-color*/
+  padding-bottom: 40px; /*Der Abstand vom letzten Element zum Nächsten*/
+}
+
+#destinations p {
+  margin-top: 20px; /* Die Abstände zu den anderen Objekten*/
+  font-size: 1.4em;  /* Größe des Text*/
+  padding: 5px 5px;  /*Abstand zum Content*/
+  color: rgb(70, 68, 68); /*Schrift Farbe*/
+  text-align: center; /*Text Ausrichtung*/
+  line-height: 1.2em; /*Abstand der Texte zueinander*/
+  padding: 0 60px; /*Text Abstand zum Rand (Maximal)*/
+}
+
+/*Bilder verändern sich (Breite)*/
+.destinations-box {
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*Breite der Bilder*/
+.destination {
+  flex-basis: 50%;
+}
+/*Größe der Bilder*/
+.card {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  margin: 12px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px 0px rgb(70, 68, 68);
+}
+
+/*Bilder*/
+#hz1 {
+  background-image: url("bilder/ny.JPG");
+}
+
+#hz2 {
+  background-image: url("bilder/hz2.jpg");
+}
+
+/*wie sich der Hover auf den Bildern verhält*/
+.hover-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(245, 237, 237, 0.527);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+/*Ob der Hover erscheint*/
+.hover-box:hover {
+  opacity: 1;
+}
+/*Schrift auf den Bildern*/
+.card h4 {
+  font-size: 4em;
+  font-style: italic;
+  color: white;
+  margin-bottom: 10px;
+}
+/*Button auf den Bildern*/
+.card a {
+  padding: 8px 15px;
+  color: rgb(70, 68, 68);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6em;
+  background-color: white;
+  border-radius: 10px;
+}
+  
+/*Iframe kann überlegt werden */
+
+
+  /* CONTAKT*/
+#contact {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(10, 3, 53, 0.493)),
+      url("bilder/Hoteleingang1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #email {
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.3s;
+  }
+  #email:hover {
+    transform: scale(1.05);
+  }
+  
+  #phone {
+    font-size: 2.5em;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: transform 0.3s;
+  }
+  #phone:hover {
+    transform: scale(1.05);
+  }
+  
+/* ABOUT*/
+#about p {
+  margin-top: 15px; /* Die Abstände zu den anderen Objekten*/
+  font-size: 1.4em;  /* Größe des Text*/
+  padding: 5px 5px;  /*Abstand zum Content*/
+  color: rgb(70, 68, 68); /*Schrift Farbe*/
+  text-align: center; /*Text Ausrichtung*/
+  line-height: 1.2em; /*Abstand der Texte zueinander*/
+  padding: 0 60px; /*Text Abstand zum Rand (Maximal)*/
+}
+
+   /* BOOK */
+
+form {
+  display: flex; /* wie passt sich das Formular an*/
+  flex-direction: column; /*passt die Kästchen untereinander an*/
+  padding-top: 40px;
+  max-width: 600px; /*Größe der Kästchen*/
+  margin: 0 auto; /*Abstände zum Content*/
+  margin-bottom: 60px;
+  padding: 40px;
+}
+input,textarea {
+  font-size: 1.4em; /*Größe der Schrift in den Kästchen*/
+  padding: 10px; /*Abstände der Kästchen innen*/
+  outline: none;
+  border: 1px solid rgb(122, 116, 116);
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 5px;
+  flex: 5;
+}
+.input-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+input[type="submit"],[type="reset"]  {
+  padding: 10px 30px;
+  background-color: rgb(124, 28, 28);
+  color: white;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  float: right;
+}
+textarea {
+  height: 10px;
+}
+    
+  /* FOOTER*/
+  footer {
+    height: 400px;
+    background-color: rgb(138, 135, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .teleende {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+   }
+   /*Ditto*/
+   .emailende {
+     color: black;
+     font-size: 1.2em;
+     text-decoration: none;
+   }
+  .ende {
+     color: black;
+     font-size: 1em;
+    
+  }
+  
+  .copyright {
+    margin-top: 5px;
+    font-size: 2em;
+  }
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
+    }
+  }
+  
+   /*Impressum*/
+   #impressum {
+    text-align: center;
+    margin-top: 60px;
+    margin: 20px;
+    padding: auto;
+   } 
+  
+    /*Datenschutz*/
+    #datenschutz {
+      text-align: center;
+      margin-top: 60px;
+      margin: 20px;
+      padding: auto;
+     } 
+    
+    
+  
+    
+    
+    
+    
+    
